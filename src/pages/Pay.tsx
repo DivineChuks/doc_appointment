@@ -4,12 +4,13 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Pay = () => {
-  const flutterKey = process.env.REACT_APP_FLUTTERWAVE_KEY;
   const navigate = useNavigate();
+  const flutterKey = process.env.REACT_APP_FLUTTERWAVE_KEY || "";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const config: PaymentConfig = {
-    public_key: "FLWPUBK_TEST-6f083513565f67df3bb0cb06ff8ae7fe-X",
+    public_key: flutterKey && flutterKey,
     tx_ref: Date.now().toString(),
     amount: 15000,
     currency: "NGN",
@@ -17,17 +18,17 @@ const Pay = () => {
     customer: {
       email,
       name,
-      phone_number: "070********",
+      phone_number: phone,
     },
     customizations: {
       title: "Book Appointment",
-      description: "Payment for items in cart",
+      description: "Payment for mental health appointment",
       logo: "https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg",
     },
   };
   const handleFlutterPayment = useFlutterwave(config);
 
-  const isButtonDisabled = !(name && email);
+  const isButtonDisabled = !(name && email && phone);
 
   return (
     <div className="flex relative flex-col items-center justify-center w-full h-screen">
@@ -48,6 +49,14 @@ const Pay = () => {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="border border-gray-400 focus:outline-none rounded-md px-2 py-2 mb-4"
+        />
+         <input
+          type="tel"
+          placeholder="Phone"
+          required
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
           className="border border-gray-400 focus:outline-none rounded-md px-2 py-2 mb-4"
         />
         <button

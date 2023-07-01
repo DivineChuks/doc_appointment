@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+MENTAL HEALTH BOOKING APPLICATION
+This is a mental health booking application built with React and Tailwind CSS. It allows users to book mental health appointments and make payments using the Flutterwave payment gateway.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FEATURES
+Payment Integration: The application integrates with Flutterwave to facilitate secure online payments for booked appointments.
+Appointment Booking: Users can schedule mental health appointments based on their preferred date and time.
 
-## Available Scripts
+TEST CARD DETAILS 
+For testing purposes, you can use the following test MasterCard PIN authentication details:
+Card number: 5531 8866 5214 2950
+CVV: 564
+Expiry: 09/32
+PIN: 3310
+OTP: 12345
 
-In the project directory, you can run:
+TECHNOLOGIES USED
+React: JavaScript library for building user interfaces.
+Tailwind CSS: Utility-first CSS framework for designing responsive and customizable UI components.
+React-router-dom: For page routing.
+Flutterwave: Payment gateway for processing online payments securely.
+Calendly: For booking appointments.
 
-### `npm start`
+INSTALLATION
+Clone the repository: git clone https://github.com/DivineChuks/doc_appointment.git
+Navigate to the project directory: cd mental-health-booking
+Install the dependencies: npm install
+Set up environment variables:
+Create a .env file in the root directory.
+Add your Flutterwave public key as REACT_APP_FLUTTERWAVE_PUBLIC_KEY=your-public-key.
+Start the application: npm start
+Access the application in your browser at http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+USAGE
+Enter your payment details to book appointment.
+Select a suitable date and time for your appointment.
+Upon successful payment, your appointment will be confirmed.
+Manage your appointments and view your booking history from your account dashboard.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+CONTRIBUTING
+Contributions to this project are welcome. To contribute, follow these steps:
 
-### `npm test`
+Fork the repository.
+Create a new branch: git checkout -b feature/your-feature-name
+Make your changes and commit them: git commit -m 'Add some feature'
+Push the changes to your branch: git push origin feature/your-feature-name
+Open a pull request.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+LICENSE
+This project is licensed under the MIT License.
 
-### `npm run build`
+ACKNOWLEDGEMENT
+Calendly: Scheduling integration for booking appointments.
+Flutterwave: Payment gateway integration for secure online payments.
+Contact
+For any inquiries or support, please contact chuksbon6@gmail.com.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to customize and expand upon this draft to suit your project's specific details and requirements. Include any additional sections or information that you believe would be helpful for users and contributors of your mental health booking application.
