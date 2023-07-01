@@ -1,46 +1,20 @@
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div id="contact" className="bg-black pt-[50px] z-0 px-[20px] md:px-[70px] overflow-hidden">
+    <div
+      id="contact"
+      className="bg-black pt-[50px] z-0 px-[20px] md:px-[70px] overflow-hidden"
+    >
       <div className="hidden md:grid md:grid-cols-5 text-white">
         <div className="col-span-1 md:col-span-2">
           <div className="mb-[20px]">
             <img src="logo.png" alt="logo" height={40} width={100} />
           </div>
-          <p className="font-glacial text-[#A3A3A3] text-[20px] mb-8">
+          <p className="font-glacial text-white text-[20px] mb-8">
             contact@friendnpal
           </p>
-          {/* <div className="flex gap-4">
-            <Image
-              src="/images/facebook.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-            <Image
-              src="/images/instagram.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-            <Image
-              src="/images/twitter.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-            <Image
-              src="/images/linkedin.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-          </div> */}
         </div>
         <div className="col-span-1">
           <h2 className="font-nohemi text-[30px] mb-[36px]">Subscribe</h2>
@@ -62,32 +36,32 @@ const Footer = () => {
           </div>
         </div>
         <div className="">
-          <h2 className="font-nohemi text-[30px] mb-[36px]">Company</h2>
-          <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer font-glacial mb-[20px]">
-              About us
+          <h2 className="text-[30px] mb-[36px]">Company</h2>
+          <ScrollLink to="/" smooth={true} duration={500}>
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
+              Home
             </p>
-          </Link>
-          <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer  font-glacial mb-[20px]">
-              Contact us
+          </ScrollLink>
+          <ScrollLink to="services" smooth={true} duration={500}>
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
+              Services
             </p>
-          </Link>
-          <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer mb-[20px]">
-              FAQs
+          </ScrollLink>
+          <ScrollLink to="#" smooth={true} duration={500}>
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
+              Contact
             </p>
-          </Link>
+          </ScrollLink>
         </div>
         <div>
           <h2 className="font-nohemi text-[30px] mb-[36px]">Legal</h2>
           <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer  font-glacial mb-[20px]">
+            <p className="text-[20px] text-white cursor-pointer  font-glacial mb-[20px]">
               Privacy policy
             </p>
           </Link>
           <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer  font-glacial mb-[20px]">
+            <p className="text-[20px] text-white cursor-pointer  font-glacial mb-[20px]">
               Terms & conditions
             </p>
           </Link>
@@ -105,18 +79,18 @@ const Footer = () => {
             Company
           </h2>
           <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer font-glacial mb-[20px]">
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
               About us
             </p>
           </Link>
           <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer  font-glacial mb-[20px]">
-              Contact us
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
+              Services
             </p>
           </Link>
           <Link to="faqs">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer font-glacial mb-[20px]">
-              FAQs
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
+              Contact
             </p>
           </Link>
         </div>
@@ -125,12 +99,12 @@ const Footer = () => {
             Legal
           </h2>
           <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer  font-glacial mb-[20px]">
+            <p className="text-[20px] text-[#A3A3A3] cursor-pointer mb-[20px]">
               Privacy policy
             </p>
           </Link>
           <Link to="#">
-            <p className="text-[20px] text-[#A3A3A3] cursor-pointer  font-glacial mb-[20px]">
+            <p className="text-[20px] text-white cursor-pointer mb-[20px]">
               Terms & conditions
             </p>
           </Link>
@@ -144,36 +118,6 @@ const Footer = () => {
           <p className="font-glacial text-[#A3A3A3] text-[20px] mb-8">
             contact@<br></br>friendnpal
           </p>
-          {/* <div className="flex gap-4">
-            <Image
-              src="/images/facebook.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-            <Image
-              src="/images/instagram.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-            <Image
-              src="/images/twitter.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-            <Image
-              src="/images/linkedin.svg"
-              className="cursor-pointer"
-              alt="facebook logo"
-              width={18}
-              height={18}
-            />
-          </div> */}
         </div>
         <div className="">
           <h2 className="font-nohemi text-white text-[26px] mb-[36px]">

@@ -16,6 +16,8 @@ OTP: 12345
 TECHNOLOGIES USED:
 React: JavaScript library for building user interfaces.
 Tailwind CSS: Utility-first CSS framework for designing responsive and customizable UI components.
+Typescript: For type checking.
+React-scroll: For smooth scrolling.
 React-router-dom: For page routing.
 Flutterwave: Payment gateway for processing online payments securely.
 Calendly: For booking appointments.

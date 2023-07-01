@@ -5,6 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 
+//NavLinks
 const navLinks: NavLinksProps[] = [
   { name: "Home", url: "/" },
   { name: "Services", url: "services" },
@@ -38,6 +39,8 @@ const Navbar = () => {
           </button>
         </Link>
       </div>
+
+      {/* Mobile version */}
       <div className="flex md:hidden overflow-hidden">
         <div className="cursor-pointer" onClick={() => setNav(true)}>
           <AiOutlineMenu style={{ color: "black", fontSize: "40px" }} />
@@ -52,7 +55,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "fixed w-full text-center bg-background bg-black left-0 top-0 bottom-0 text-white h-full p-10 py-10 ease-in duration-500"
+                ? "fixed w-full text-center bg-black left-0 top-0 bottom-0 text-white h-full p-10 py-10 ease-in duration-500"
                 : "fixed p-10 w-full left-[-100%] z-50 top-0 duration-1000 h-full ease-in"
             }
           >
