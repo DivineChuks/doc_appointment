@@ -7,6 +7,9 @@ module.exports = {
     extend: {
      backgroundImage: {
       "book": "url('../public/appoint.jpg')"
+     },
+     fontFamily: {
+      "montserrat": ["Montserrat", "sans-serrif"]
      }
     },
   },

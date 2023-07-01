@@ -38,7 +38,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div>
+    <div className="font-montserrat">
       <RouterProvider router={router} />
     </div>
   );

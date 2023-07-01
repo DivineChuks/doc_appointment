@@ -15,3 +15,8 @@ export interface PaymentConfig {
       logo: string;
     };
   }
+
+  export interface NavLinksProps{
+    name: string,
+    url: string,
+  }

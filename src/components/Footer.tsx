@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-black pt-[50px] z-0 px-[20px] md:px-[70px] overflow-hidden">
+    <div id="contact" className="bg-black pt-[50px] z-0 px-[20px] md:px-[70px] overflow-hidden">
       <div className="hidden md:grid md:grid-cols-5 text-white">
         <div className="col-span-1 md:col-span-2">
           <div className="mb-[20px]">

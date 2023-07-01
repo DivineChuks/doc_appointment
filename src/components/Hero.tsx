@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8 px-[20px] md:px-[50px] py-[50px]">
+    <div className="flex flex-col md:flex-row items-center gap-8 px-[20px] md:px-[50px] pt-[50px]">
       <div className="flex-1">
-        <h2 className="text-[70px] font-bold leading-[80px] mb-[30px]">
+        <h2 className="text-[65px] font-bold leading-[80px] mb-[30px]">
           Seamless. Flexible. Booking.
         </h2>
-        <p className="text-[22px] font-light my-[30px] md:my-[20px]">
+        <p className="text-[20px] font-light my-[30px] md:my-[20px]">
           Take charge of your mental well-being with our effortless appointment
           booking platform. Secure the support you need with just a few clicks,
           whether it's therapeutic consultations, counseling sessions, or
