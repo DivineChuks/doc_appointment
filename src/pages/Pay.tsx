@@ -34,7 +34,7 @@ const Pay = () => {
     <div className="flex relative flex-col items-center justify-center w-full h-screen">
       <div className="bg-book absolute inset-0 z-10 bg-center bg-cover "></div>
       <div className="bg-white bg-opacity-80 z-20 absolute inset-0"></div>
-      <div className="flex relative mx-auto px-[20px] md:px-0 w-full md:w-[20%] flex-col gap-2 z-50">
+      <div className="flex relative mx-auto px-[20px] md:px-0 w-full md:w-[20%] flex-col gap-2 z-30">
         <input
           type="text"
           placeholder="Name"

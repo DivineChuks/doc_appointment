@@ -43,7 +43,7 @@ const Navbar = () => {
       {/* Mobile version */}
       <div className="flex md:hidden overflow-hidden">
         <div className="cursor-pointer" onClick={() => setNav(true)}>
-          <AiOutlineMenu style={{ color: "black", fontSize: "40px" }} />
+          <AiOutlineMenu style={{ color: "black", fontSize: "30px" }} />
         </div>
         <div
           className={
@@ -82,7 +82,7 @@ const Navbar = () => {
                   {link.name}
                 </ScrollLink>
               ))}
-              <Link to="/pay">
+              <Link to="/pay" onClick={() => setNav(false)}>
                 <button className="rounded-lg bg-blue-500 text-white px-[30px] py-[14px]">
                   Book Now
                 </button>
