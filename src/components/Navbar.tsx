@@ -19,7 +19,7 @@ const Navbar = () => {
       <Link to="/" className="flex items-center">
         <img src="/logo.png" alt="logo" style={{ width: "70px" }} />
       </Link>
-      <div className="hidden md:flex items-center gap-[40px] text-black font-bold">
+      <div className="hidden md:flex items-center gap-[40px] text-black font-medium">
         {navLinks.map((link) => (
           <ScrollLink
             to={link.url}
