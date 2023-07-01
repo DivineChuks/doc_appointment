@@ -17,8 +17,8 @@ const Services = () => {
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-8 mt-[50px]">
         <div className="flex-1">
-          <div className="bg-blue-500 flex items-center justify-center w-[30px] h-[30px] rounded-md p-2 mb-[10px]">
-            <RiPsychotherapyFill color="white" size={80} />
+          <div className="bg-blue-500 flex items-center justify-center w-[40px] h-[40px] rounded-md p-2 mb-[10px]">
+            <RiPsychotherapyFill color="white" style={{ fontSize: "40px" }}  />
           </div>
           <h2 className="font-bold text-[26px] mb-[10px]">Psychotherapy</h2>
           <p className="font-light text-[18px]">
@@ -28,8 +28,8 @@ const Services = () => {
           </p>
         </div>
         <div className="flex-1">
-          <div className="bg-blue-500 flex items-center justify-center w-[30px] h-[30px] rounded-md p-2 mb-[10px]">
-            <BiPodcast color="white" size={80} />
+          <div className="bg-blue-500 flex items-center justify-center w-[40px] h-[40px] rounded-md p-2 mb-[10px]">
+            <BiPodcast color="white" size={40} />
           </div>
           <h2 className="font-bold text-[26px] mb-[10px]">
             Health Education
@@ -41,8 +41,8 @@ const Services = () => {
           </p>
         </div>
         <div className="flex-1">
-          <div className="bg-blue-500 flex items-center justify-center w-[30px] h-[30px] rounded-md p-2 mb-[10px]">
-            <BiSupport color="white" size={80} />
+          <div className="bg-blue-500 flex items-center justify-center w-[40px] h-[40px] rounded-md p-2 mb-[10px]">
+            <BiSupport color="white" size={40} />
           </div>
           <h2 className="font-bold text-[26px] mb-[10px]">Support Groups</h2>
           <p className="font-light text-[18px]">
@@ -52,8 +52,8 @@ const Services = () => {
           </p>
         </div>
         <div className="flex-1">
-          <div className="bg-blue-500 flex items-center justify-center w-[30px] h-[30px] rounded-md p-2 mb-[10px]">
-            <MdOutlineLocalHospital color="white" size={80} />
+          <div className="bg-blue-500 flex items-center justify-center w-[40px] h-[40px] rounded-md p-2 mb-[10px]">
+            <MdOutlineLocalHospital color="white" size={40} />
           </div>
           <h2 className="font-bold text-[26px] mb-[10px]">Wellness Workshop</h2>
           <p className="font-light text-[18px]">
