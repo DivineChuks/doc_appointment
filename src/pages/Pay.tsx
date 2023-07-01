@@ -12,7 +12,7 @@ const Pay = () => {
   const config: PaymentConfig = {
     public_key: flutterKey && flutterKey,
     tx_ref: Date.now().toString(),
-    amount: 15000,
+    amount: 3000,
     currency: "NGN",
     payment_options: "card,mobilemoney,ussd",
     customer: {
