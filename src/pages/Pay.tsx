@@ -44,7 +44,7 @@ const Pay = () => {
           className="border w-full border-gray-400 focus:outline-none rounded-md px-2 py-2 mb-4"
         />
         <input
-          type="text"
+          type="email"
           placeholder="Email"
           required
           value={email}
@@ -63,7 +63,7 @@ const Pay = () => {
           disabled={isButtonDisabled}
           onClick={() => {
             handleFlutterPayment({
-              callback: (response) => {
+              callback: (res) => {
                 navigate("/book");
                 closePaymentModal();
               },
